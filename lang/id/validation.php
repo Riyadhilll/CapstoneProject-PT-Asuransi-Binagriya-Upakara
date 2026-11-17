@@ -1,0 +1,37 @@
+<?php
+
+return [
+    'after_or_equal' => ':Attribute harus tanggal setelah atau sama dengan :date.',
+    'before_or_equal' => ':Attribute tidak boleh melewati :date.',
+    'boolean' => ':Attribute harus ya atau tidak.',
+    'date' => ':Attribute bukan tanggal yang valid.',
+    'email' => ':Attribute harus alamat email yang valid.',
+    'exists' => ':Attribute yang dipilih tidak valid.',
+    'in' => ':Attribute yang dipilih tidak valid.',
+    'integer' => ':Attribute harus bilangan bulat.',
+    'max' => ['numeric' => ':Attribute maksimal :max.', 'string' => ':Attribute maksimal :max karakter.'],
+    'min' => ['numeric' => ':Attribute minimal :min.', 'string' => ':Attribute minimal :min karakter.'],
+    'regex' => 'Format :attribute tidak valid; gunakan huruf, angka, titik, garis bawah, atau tanda hubung.',
+    'required_if' => ':Attribute wajib diisi bila :other adalah :value.',
+    'unique' => ':Attribute sudah dipakai.',
+    'not_in' => ':Attribute yang dipilih tidak valid.',
+    'required' => ':Attribute wajib diisi.',
+    'string' => ':Attribute harus berupa teks.',
+
+    'attributes' => [
+        'nama' => 'nama konsumen',
+        'telepon' => 'nomor telepon',
+        'kanal_id' => 'kanal',
+        'kategori_id' => 'kategori',
+        'diterima_pada' => 'waktu diterima',
+        'tgl_dokumen_lengkap' => 'tanggal dokumen lengkap',
+        'hasil' => 'hasil/jawaban',
+        'metode_penyampaian' => 'metode penyampaian',
+        'divisi_tujuan_id' => 'divisi tujuan',
+        'pic_id' => 'PIC',
+        'status_kode' => 'status',
+        'tambahan_hk' => 'tambahan hari kerja',
+        'dari' => 'tanggal awal',
+        'sampai' => 'tanggal akhir',
+    ],
+];

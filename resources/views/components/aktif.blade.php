@@ -1,0 +1,2 @@
+@props(['aktif'])
+<span @class(['inline-flex min-w-16 justify-center rounded-md px-2.5 py-1 text-[11px] font-semibold', 'bg-emerald-100 text-emerald-700' => $aktif, 'bg-slate-100 text-slate-500' => ! $aktif])>{{ $aktif ? 'Aktif' : 'Nonaktif' }}</span>

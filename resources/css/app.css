@@ -4,6 +4,42 @@
 @source '../../storage/framework/views/*.php';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-serif: Georgia, 'Times New Roman', serif;
+    --color-navy: #0B2A6B;
+    --color-navy-2: #1D3E85;
+    --color-navy-ink: #D6E2FF;
+    --color-navy-muted: #8FA9E0;
+    --color-gold: #D4A93C;
+    --color-primer: #1E65FF;
+    --color-primer-tua: #1550D6;
+    --color-primer-muda: #E3ECFF;
+}
+
+input[type='date']::-webkit-datetime-edit {
+    padding: 0;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator,
+input[type='datetime-local']::-webkit-calendar-picker-indicator {
+    width: 1rem;
+    height: 1rem;
+    margin-inline-start: 0.375rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+@layer components {
+    .kartu { @apply rounded-[10px] border border-slate-200 bg-white; }
+    .judul { @apply font-serif font-bold text-slate-900; }
+    .label { @apply mb-1.5 block text-xs font-semibold text-slate-700; }
+    .input { @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 focus:border-primer focus:ring-2 focus:ring-primer/20 focus:outline-none disabled:bg-slate-100 disabled:text-slate-500; }
+    .btn-primer { @apply inline-flex items-center justify-center gap-1.5 rounded-lg bg-primer px-4 py-2.5 text-sm font-semibold text-white hover:bg-primer-tua focus-visible:ring-2 focus-visible:ring-primer/40 focus-visible:outline-none; }
+    .btn-garis { @apply inline-flex items-center justify-center gap-1.5 rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-800 hover:bg-slate-50 focus-visible:ring-2 focus-visible:ring-primer/40 focus-visible:outline-none; }
+    .th { @apply px-3 py-3 first:pl-5 text-[10px] font-semibold tracking-wider whitespace-nowrap text-slate-500 uppercase; }
+    .td { @apply px-3 py-3 first:pl-5 text-[13px] whitespace-nowrap text-slate-700; }
+    .tautan { @apply font-semibold text-primer hover:underline; }
+    .pil-abu { @apply inline-flex rounded-md bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600; }
+    .segmen-grup { @apply flex flex-wrap gap-2 sm:flex-nowrap sm:gap-0; }
+    .segmen { @apply flex flex-1 cursor-pointer items-center justify-center rounded-lg border border-slate-300 bg-white px-2 py-2.5 text-center text-[13px] whitespace-nowrap text-slate-700 sm:rounded-none sm:first:rounded-l-lg sm:last:rounded-r-lg sm:not-first:-ml-px has-checked:z-10 has-checked:border-primer has-checked:bg-primer-muda/60 has-checked:font-semibold has-checked:text-primer has-focus-visible:ring-2 has-focus-visible:ring-primer/30; }
 }
